@@ -266,6 +266,13 @@ header
   transition: all 0.3s ease 0s;
 }
 
+.video-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .background-header .main-nav .logo {
   line-height: 75px;
 }
@@ -1502,7 +1509,7 @@ footer
 footer {
   margin-top: 60px;
   padding: 60px 0px 30px 0px;
-  background-color: #2a2a2a;
+  background-color: #000000;
 }
 
 footer .logo {
