@@ -2384,3 +2384,37 @@ responsive
     opacity: 0;
   }
 }
+
+/* Swipe Hint - Only visible on smartphones */
+.swipe-hint {
+    display: none; /* Hidden by default */
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    margin: 10px auto;
+}
+
+/* Arrow Animation */
+.swipe-hint i {
+    margin-left: 10px;
+    font-size: 18px;
+    animation: swipeArrow 1s infinite linear;
+}
+
+/* Keyframes for Animation */
+@keyframes swipeArrow {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Only show on screens smaller than 576px (smartphones) */
+@media (max-width: 575.98px) {
+    .swipe-hint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
